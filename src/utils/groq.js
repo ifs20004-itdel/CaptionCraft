@@ -18,8 +18,8 @@ export const chat = async(message, paramList, isEmoji) => {
     You're work as an AI assistant to provide the answer only. 
     Your task is to help user to generate caption for social media feed post based on the following description:
     ${message}
-     
-    Make the caption ${parse["Length"]}, ${parse["Tone"]}, and engaging. Use ${isEmoji ? "emojis": "no emojis"} and also use ${parse["Hastags"]}.
+    
+    Make the caption ${parse["Length"]}, in a ${parse["Tone"]} tone, and engaging. Use ${isEmoji ? "emojis": "no emojis"} and also use ${parse["Hastags"]}.
   `
   try{
     const response = await fetch(url, {
