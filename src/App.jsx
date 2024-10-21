@@ -182,7 +182,7 @@ function App() {
           </div>
         </div>
       </div>
-      <p className="text-center font-light mt-7">© Samuel Immanuel Herlinton Sibuea. All rights reserved.</p>
+      <p className="text-center font-light mt-16">© Samuel Immanuel Herlinton Sibuea. All rights reserved.</p>
 
       {
         showResultBox &&
