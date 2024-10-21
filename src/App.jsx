@@ -69,12 +69,12 @@ function App() {
           <img src={github_logo} alt="Repository" width={35} height={35} />
         </a>
       </div>
-      <div className="flex flex-row gap-20 mt-12">
-        <div className="w-3/5">
-          <h1 className="text-5xl text-indigo-500 font-poppins font-extrabold">
+      <div className="flex flex-col md:flex-row gap-5 md:gap-20 mt-12">
+        <div className="w-full md:w-3/5">
+          <h1 className=" text-xl md:text-5xl text-indigo-500 font-poppins font-extrabold">
             CAPTIONCRAFT
           </h1>
-          <p className="content-start pt-4 pb-2 font-light">
+          <p className="text-xs md:text-base text-justify pt-4 pb-2 font-light">
             CaptionCraft is an AI-powered platform designed to elevate your
             social media caption. With the cutting-edge integration of LLM
             (Large Language Model) technology, CaptionCraft helps you
@@ -83,7 +83,7 @@ function App() {
             moments, or growing your brand, CaptionCraft provides intelligent
             suggestions that align with your tone, audience, and style.
           </p>
-          <p className="pt-2 pb-4 font-light">
+          <p className="text-xs md:text-base text-justify pt-2 pb-4 font-light">
             Say goodbye to writer's block and let our AI-powered tool enhance
             your posts, ensuring they always stand out. Engage, inspire, and
             grow with captions crafted to perfection!
@@ -97,7 +97,7 @@ function App() {
                     placeholder="Describe your caption"
                     type="text"
                     rows={5}
-                    className="w-full py-2 px-4 text-md rounded-md border-2 border-red-600"
+                    className="w-full py-2 px-4 text-xs md:text-md font-light rounded-md border-2 border-red-600"
                   />
                   <p className="text-red-600 text-sm py-0.5">
                     This field is required
@@ -109,7 +109,7 @@ function App() {
                   placeholder="Describe your caption"
                   type="text"
                   rows={5}
-                  className="py-2 px-4 text-md rounded-md "
+                  className="text-xs md:text-md py-2 px-4 font-light rounded-md "
                 />
               )}
               <button
@@ -126,7 +126,7 @@ function App() {
             </form>
           </div>
         </div>
-        <div className="w-3/5 m-5">
+        <div className="w-3/5 md:m-5">
           <div className="flex flex-col max-w-sm gap-5 ">
             <Select
               type={id[0]}

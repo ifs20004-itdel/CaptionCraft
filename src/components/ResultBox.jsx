@@ -18,7 +18,7 @@ const ResultBox = (
                 <div className="relative p-8 w-full max-w-2xl max-h-full">
                     <div className="relative bg-white rounded-lg shadow-xl ">
                         <div className="flex items-center justify-between p-4 border-b-2">
-                            <h3 className="text-xl font-semibold font-poppins text-gray-900 ">
+                            <h3 className="text-base md:text-xl font-semibold font-poppins text-gray-900 ">
                                 Caption
                             </h3>
                             <button onClick={handleClose} type="button" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="static-modal">
@@ -28,8 +28,8 @@ const ResultBox = (
                                 <span className="sr-only">Close modal</span>
                             </button>
                         </div>
-                        <div className="p-5 space-y-4 bg-slate-100 rounded-3xl shadow-lg m-8">
-                            <p className="font-poppins text-gray-500 p-4">
+                        <div className="p-5 m-2 md:m-8 space-y-4 bg-slate-100 rounded-xl md:rounded-3xl shadow-lg ">
+                            <p className="font-poppins text-sm md:text-base text-gray-500 md:p-4">
                                 {data}
                             </p>
                         </div>
